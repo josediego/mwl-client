@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F4F4F4]">
+    <section class="container mx-auto h-screen flex items-center">
+      <div class="w-full">
+        <div class="flex items-start justify-between max-w-[640px]">
+          <img src="./img/ilust-1.svg" alt="" />
+          <img src="./img/img-1-login.png" alt="" />
+        </div>
+        <div
+          class="flex items-end justify-between mt-[-30px] max-w-[640px] relative"
+        >
+          <img src="./img/img-2-login.png" alt="" />
+          <img src="./img/ilust-2.svg" alt="" />
+          <div
+            class="px-[19px] py-[30px] rounded-[30px] bg-[rgba(0,0,0,0.30)] backdrop-blur-xl w-[162px] absolute left-[180px] top-[-90px]"
+          >
+            <div class="flex items-center">
+              <span class="text-[50px] text-[#F4F4F4] font-semibold leading-tight">1.5</span>
+              <i data-lucide="percent" class="text-[#F4F4F4] w-[44px] h-[44px]"></i>
+            </div>
+            <p class="text-sm text-[#F4F4F4]">
+              Lose up to of your body fat per week
+            </p>
+          </div>
+        </div>
+        <div class="mt-10 max-w-[640px] relative">
+          <img src="./img/img-3-login.png" alt="" />
+          <div
+            class="px-[19px] py-[25px] rounded-[30px] bg-[rgba(0,0,0,0.30)] backdrop-blur-xl w-[259px] absolute right-[120px] top-[-70px]"
+          >
+            <div class="flex items-center justify-center gap-[17px]">
+              <i data-lucide="message-square-heart" class="text-[#F4F4F4] w-[27px] h-[27px]"></i>
+              <p class="text-sm text-[#F4F4F4] w-[121px]">
+                Unlimited 24/7 messaging
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full">
+        <div class="w-[430px] flex items-center gap-[70px] flex-col">
+          <div class="text-center">
+            <h1 class="font-semibold text-[50px] mb-4">Welcome back</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </p>
+          </div>
+          <form class="w-full">
+            <div class="input-wrapper w-full mb-7">
+              <input
+                type="email"
+                id="user"
+                class="input-field placeholder-transparent"
+                placeholder=" "
+                required
+              />
+              <label for="user" class="input-label">Email Address*</label>
+            </div>
+            <div class="input-wrapper w-full">
+              <input
+                type="password"
+                id="password"
+                class="input-field placeholder-transparent"
+                placeholder=" "
+                required
+              />
+              <label for="password" class="input-label">Password*</label>
+            </div>
+            <div class="h-[70px] flex items-center justify-center text-center">
+              <p class="text-sm text-[#EE736B] opacity-0">
+                It seems that your email/password combination in incorrect.
+              </p>
+            </div>
+            <button
+              class="h-[60px] w-full bg-[#242424] rounded-[60px] text-[#F4F4F4] font-semibold"
+            >
+              Login
+            </button>
+          </form>
+          <div class="text-center">
+            <p>
+              Don’t have an account?
+              <a class="underline font-semibold" href="">Take the quiz</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

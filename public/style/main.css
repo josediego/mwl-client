@@ -1,0 +1,50 @@
+body {
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  color: #242424;
+}
+
+/* Input */
+.input-wrapper {
+  position: relative;
+  margin-top: 7px;
+}
+
+.input-field {
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  padding: 0 22px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16p;
+  transition: border-color 0.3s ease;
+  height: 50px;
+  background: #F4F4F4;
+}
+
+.input-field:focus {
+  border-color: #242424;
+  outline: none;
+}
+
+.input-label {
+  position: absolute; 
+  top: 12px;
+  left: 22px;
+  font-size: 16px;
+  color: #8D8D8D;
+  background: #F4F4F4;
+  transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transform-origin: left top;
+  transform: translateY(0) scale(1);
+}
+
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+  transform: translateY(-120%) scale(01);
+  color: #8D8D8D;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0 4px;
+  left: 18px;
+}
