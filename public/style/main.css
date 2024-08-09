@@ -48,3 +48,82 @@ body {
   padding: 0 4px;
   left: 18px;
 }
+
+/* Checkbox */
+.box-check.box-check--form .box-check-label::before,
+.box-check.box-check--form .box-check-label::after{
+  position: absolute;
+}
+.box-check.box-check--form .box-check-label{
+  padding-left: 30px;
+  display: block;
+}
+.box-check.box-check--form .box-check-label::after{
+  top: 5px;
+}
+.box-check.box-check--form input[type=checkbox] {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  margin: 7px 0;
+  clip: auto;
+  cursor: pointer;
+}
+.box-check input[type=checkbox] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+}
+
+.box-check-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: #242424;
+  font-size: 14px;
+}
+
+.box-check-label:before{
+  content: "";
+  display: block;
+  border: 1px solid #242424;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.box-check-label::after {
+  content: "";
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  opacity: 0;
+  position: absolute;
+  left: 2px;
+  background-color: #242424;
+  width: 11px;
+  height: 11px;
+  transition: 300ms all ease-in;
+  border-radius: 1px;
+}
+
+.box-check-input:checked+.box-check-label::after{
+  opacity: 1;
+}
+
+.box-check.box-check--white .box-check-label{
+  color: #FFFFFF;
+}
+.box-check.box-check--white .box-check-label:before{
+  background-color: #FFFFFF;
+}

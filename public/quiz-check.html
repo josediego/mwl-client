@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F4F4F4] relative">
+    <img class="absolute top-0 left-0 right-0 w-full h-screen object-cover" src="./img/bg.jpg" alt="">
+    <header class="container mx-auto relative pt-5">
+      <div class="flex items-center justify-between">
+        <h1>LOGO</h1>
+        <button class="border border-[#242424] flex items-center justify-center h-[40px] rounded-[40px] px-10 bg-[#F4F4F4]">
+          <span class="text-sm font-semibold">Sign In</span>
+        </button>
+      </div>
+    </header>
+    <section class="container mx-auto relative pt-5">
+      <div class="flex justify-center">
+        <div class="w-6/12">
+          <div class="mb-[30px] flex">
+            <div class="bg-[#93DE68] w-full p-12 rounded-[30px] relative">
+              <img class="absolute right-0 bottom-0" src="./img/check-alert.svg" alt="">
+              <h2 class="text-[#177060] text-[30px] font-semibold mb-2">You are eligible for the program!</h2>
+              <p class="text-[#0C6467] font-medium mb-2">Preparing your eligibility profile now...</p>
+              <div class="flex gap-1 flex-col mb-[30px]">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check" class="text-[#0C6467]"></i>
+                  <span class="text-[#0D6465] font-light">Age</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check" class="text-[#0C6467]"></i>
+                  <span class="text-[#0D6465] font-light">State of residence</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check" class="text-[#0C6467]"></i>
+                  <span class="text-[#0D6465] font-light">Medical history</span>
+                </div>
+              </div>
+              <div>
+                <button class="border border-[#242424] bg-[#242424] flex items-center justify-center h-[60px] rounded-[60px] px-[50px] text-[#F4F4F4]">
+                  <span class="font-semibold">See your personalized plan</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
