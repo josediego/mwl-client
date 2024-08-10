@@ -11,7 +11,7 @@ body {
 }
 
 .input-field {
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   border-radius: 10px;
   padding: 0 22px;
   width: 100%;
@@ -19,7 +19,7 @@ body {
   font-size: 16p;
   transition: border-color 0.3s ease;
   height: 50px;
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .input-field:focus {
@@ -28,12 +28,12 @@ body {
 }
 
 .input-label {
-  position: absolute; 
+  position: absolute;
   top: 12px;
   left: 22px;
   font-size: 16px;
-  color: #8D8D8D;
-  background: #F4F4F4;
+  color: #8d8d8d;
+  background: #f4f4f4;
   transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
   transform-origin: left top;
   transform: translateY(0) scale(1);
@@ -42,7 +42,7 @@ body {
 .input-field:focus + .input-label,
 .input-field:not(:placeholder-shown) + .input-label {
   transform: translateY(-120%) scale(01);
-  color: #8D8D8D;
+  color: #8d8d8d;
   font-weight: 300;
   font-size: 12px;
   padding: 0 4px;
@@ -51,17 +51,17 @@ body {
 
 /* Checkbox */
 .box-check.box-check--form .box-check-label::before,
-.box-check.box-check--form .box-check-label::after{
+.box-check.box-check--form .box-check-label::after {
   position: absolute;
 }
-.box-check.box-check--form .box-check-label{
+.box-check.box-check--form .box-check-label {
   padding-left: 30px;
   display: block;
 }
-.box-check.box-check--form .box-check-label::after{
+.box-check.box-check--form .box-check-label::after {
   top: 5px;
 }
-.box-check.box-check--form input[type=checkbox] {
+.box-check.box-check--form input[type="checkbox"] {
   opacity: 0;
   width: 20px;
   height: 20px;
@@ -70,7 +70,7 @@ body {
   clip: auto;
   cursor: pointer;
 }
-.box-check input[type=checkbox] {
+.box-check input[type="checkbox"] {
   width: 1px;
   height: 1px;
   padding: 0;
@@ -90,7 +90,7 @@ body {
   font-size: 14px;
 }
 
-.box-check-label:before{
+.box-check-label:before {
   content: "";
   display: block;
   border: 1px solid #242424;
@@ -105,7 +105,7 @@ body {
 
 .box-check-label::after {
   content: "";
-  background-image: url('../img/check.svg');
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   opacity: 0;
   position: absolute;
@@ -117,13 +117,91 @@ body {
   border-radius: 1px;
 }
 
-.box-check-input:checked+.box-check-label::after{
+.box-check-input:checked + .box-check-label::after {
   opacity: 1;
 }
 
-.box-check.box-check--white .box-check-label{
-  color: #FFFFFF;
+.box-check.box-check--white .box-check-label {
+  color: #ffffff;
 }
-.box-check.box-check--white .box-check-label:before{
-  background-color: #FFFFFF;
+.box-check.box-check--white .box-check-label:before {
+  background-color: #ffffff;
+}
+
+/* Radio */
+.box-radio.box-radio--form .box-radio-label::before,
+.box-radio.box-radio--form .box-radio-label::after {
+  position: absolute;
+}
+.box-radio.box-radio--form .box-radio-label {
+  padding-left: 30px;
+  display: block;
+}
+.box-radio.box-radio--form .box-radio-label::after {
+  top: 5px;
+}
+.box-radio.box-radio--form input[type="radio"] {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  margin: 7px 0;
+  clip: auto;
+  cursor: pointer;
+}
+.box-radio input[type="radio"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+}
+
+.box-radio-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: #242424;
+  font-size: 14px;
+}
+
+.box-radio-label:before {
+  content: "";
+  display: block;
+  border: 1px solid #242424;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.box-radio-label::after {
+  content: "";
+  background-repeat: no-repeat;
+  opacity: 0;
+  position: absolute;
+  left: 2px;
+  background-color: #242424;
+  width: 11px;
+  height: 11px;
+  transition: 300ms all ease-in;
+  border-radius: 12px;
+}
+
+.box-radio-input:checked + .box-radio-label::after {
+  opacity: 1;
+}
+
+.box-radio.box-radio--white .box-radio-label {
+  color: #ffffff;
+}
+.box-radio.box-radio--white .box-radio-label:before {
+  background-color: #ffffff;
 }

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F4F4F4] relative">
+    <section class="flex">
+      <div class="h-screen p-[30px]">
+        <div class="bg-[#242424] w-[360px] h-full rounded-[20px] p-[30px]">
+          <h1 class="text-[#F4F4F4]">LOGO</h1>
+          <div class="h-[calc(100vh-144px)] flex flex-col justify-between">
+            <nav>
+              <ul class="pt-[77px] flex flex-col gap-[30px]">
+                <li>
+                  <a class="flex gap-5 items-center" href="">
+                    <i data-lucide="home" class="text-[#8D8D8D]"></i>
+                    <span class="text-[#8D8D8D]">Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-5 items-center" href="">
+                    <i data-lucide="message-circle" class="text-[#8D8D8D]"></i>
+                    <span class="text-[#8D8D8D]">Ask for help</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-5 items-center" href="">
+                    <i data-lucide="clipboard-list" class="text-[#8D8D8D]"></i>
+                    <span class="text-[#8D8D8D]">Lab Results</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-5 items-center" href="">
+                    <i data-lucide="calendar-days" class="text-[#4E4E4E]"></i>
+                    <span class="flex items-center gap-2">
+                      <span class="text-[#4E4E4E]">Calendar</span>
+                      <span class="text-[#4E4E4E] text-sm">(Coming soon)</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="flex flex-col gap-[30px]">
+              <li>
+                <a class="flex gap-5 items-center" href="">
+                  <i data-lucide="message-circle" class="text-[#8D8D8D]"></i>
+                  <span class="text-[#8D8D8D]">Ask for help</span>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center" href="">
+                  <i data-lucide="message-circle" class="text-[#8D8D8D]"></i>
+                  <span class="text-[#8D8D8D]">Ask for help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-full py-[30px] pr-[30px] h-screen overflow-auto">
+        <div
+          class="bg-[#FFFFFF] rounded-[20px] h-20 px-[30px] flex items-center justify-between mb-[30px]"
+        >
+          <div class="flex items-center gap-20">
+            <div
+              class="rounded-[40px] bg-[#242424] cursor-pointer flex items-center gap-5 pr-5"
+            >
+              <div
+                class="bg-[#242424] h-10 w-10 rounded-full flex items-center justify-center"
+              >
+                <span class="text-[#F4F4F4] text-sm">JD</span>
+              </div>
+              <span class="text-[#F4F4F4]">Jose Test</span>
+            </div>
+            <div class="flex items-center gap-5">
+              <div
+                class="bg-[#F6F6F6] h-10 px-6 flex items-center justify-center gap-2 rounded-[40px]"
+              >
+                <i data-lucide="calendar" class="text-[#242424]"></i>
+                <span class="text-[#242424]">28 year</span>
+              </div>
+              <div
+                class="bg-[#F6F6F6] h-10 px-6 flex items-center justify-center gap-2 rounded-[40px]"
+              >
+                <i data-lucide="ruler" class="text-[#242424]"></i>
+                <span class="text-[#242424]">1.70 mt</span>
+              </div>
+              <div
+                class="bg-[#F6F6F6] h-10 px-6 flex items-center justify-center gap-2 rounded-[40px]"
+              >
+                <i data-lucide="weight" class="text-[#242424]"></i>
+                <span class="text-[#242424]">80 kl</span>
+              </div>
+              <div
+                class="bg-[#F6F6F6] h-10 px-6 flex items-center justify-center gap-2 rounded-[40px]"
+              >
+                <i data-lucide="gauge" class="text-[#242424]"></i>
+                <span class="text-[#242424]">50 bmi</span>
+              </div>
+            </div>
+          </div>
+          <button
+            class="h-10 w-10 bg-[#F6F6F6] rounded-full flex items-center justify-center"
+          >
+            <i data-lucide="bell" class="text-[#242424]"></i>
+          </button>
+        </div>
+        <div class="flex">
+          <div class="w-full pr-[30px]">
+            <div
+              class="bg-[#FFFFFF] rounded-[20px] py-[30px] px-[30px] mb-[30px]"
+            >
+              <h2 class="mb-5 font-semibold text-xl">Account information</h2>
+              <div class="flex flex-col gap-5">
+                <div class="flex items-center">
+                  <div class="min-w-[300px]">
+                    <p class="font-semibold mb-2">Email</p>
+                    <p>dadsadnsad@sadas.com</p>
+                  </div>
+                  <button
+                    class="bg-[#F6F6F6] w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+                    onclick="openModal()"
+                  >
+                    <i data-lucide="pencil" class="text-[#242424]"></i>
+                  </button>
+                </div>
+                <div class="flex items-center">
+                  <div class="min-w-[300px]">
+                    <p class="font-semibold mb-2">Name</p>
+                    <p>Jose Test</p>
+                  </div>
+                  <a
+                    class="bg-[#F6F6F6] w-10 h-10 rounded-full flex items-center justify-center"
+                    href=""
+                  >
+                    <i data-lucide="pencil" class="text-[#242424]"></i>
+                  </a>
+                </div>
+                <div class="flex items-center">
+                  <div>
+                    <p class="font-semibold mb-2">Password</p>
+                    <a href="" class="underline font-medium">Reset password</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="min-w-[328px]">
+            <div class="bg-[#FFFFFF] rounded-[20px] py-5 px-[30px] mb-[30px]">
+              <div class="">
+                <button
+                  class="flex items-center justify-between cursor-pointer w-full"
+                  onclick="togglePanel(1)"
+                >
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="languages" class="text-[#242424]"></i>
+                    <div class="flex items-center gap-1">
+                      <span>Language</span>
+                      <span class="font-light">- English</span>
+                    </div>
+                  </div>
+                  <i
+                    id="arrow-1"
+                    data-lucide="chevron-down"
+                    class="text-[#242424] transform transition-transform duration-300 ease-in-out"
+                  ></i>
+                </button>
+                <div
+                  id="panel-1"
+                  class="max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out"
+                >
+                  <div class="pt-5">
+                    <div>
+                      <div class="box-radio">
+                        <input
+                          class="box-radio-input"
+                          id="English"
+                          name="Language"
+                          type="radio"
+                          checked
+                        />
+                        <label
+                          class="box-radio-label text-[12px]"
+                          for="English"
+                        >
+                          <span>English</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="pt-5">
+                      <div class="box-radio">
+                        <input
+                          class="box-radio-input"
+                          id="Spanish"
+                          name="Language"
+                          type="radio"
+                        />
+                        <label
+                          class="box-radio-label text-[12px]"
+                          for="Spanish"
+                        >
+                          <span>Spanish</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="modal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+    >
+      <div class="bg-white rounded-[30px] shadow-lg w-[660px] py-10 px-[30px] relative">
+        <i data-lucide="circle-x" class="text-[#242424] absolute top-[18px] right-[18px] cursor-pointer" onclick="closeModal()"></i>
+        <h2 class="text-xl font-semibold text-[#242424] mb-5">Edit patient info</h2>
+        <p class="text-[#242424] mb-5">
+          Medical details
+        </p>
+        <div class="mb-10">
+          <div class="mb-[30px]">
+            <div class="flex items-center gap-5">
+              <div class="input-wrapper w-full">
+                <input type="text" id="First" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="First" class="input-label bg-white">First name*</label>
+              </div>
+              <div class="input-wrapper w-full">
+                <input type="text" id="Last" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Last" class="input-label bg-white">Last name*</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-[30px]">
+            <div class="input-wrapper w-full">
+              <input type="text" id="Current" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+              <label for="Current" class="input-label bg-white">Current address line 1*</label>
+            </div>
+          </div>
+          <div class="mb-[30px]">
+            <div class="flex items-center gap-5">
+              <div class="input-wrapper w-full">
+                <input type="text" id="City" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="City" class="input-label bg-white">City*</label>
+              </div>
+              <div class="input-wrapper w-full">
+                <input type="text" id="City" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="City" class="input-label bg-white">State*</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-[30px]">
+            <div class="flex items-center gap-5">
+              <div class="input-wrapper w-full">
+                <input type="text" id="Zip" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Zip" class="input-label bg-white">Zip code*</label>
+              </div>
+              <div class="input-wrapper w-full">
+                <input type="text" id="Country" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Country" class="input-label bg-white">Country*</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-[30px]">
+            <div class="flex items-center gap-5">
+              <div class="input-wrapper w-full">
+                <input type="text" id="Sex" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Sex" class="input-label bg-white">Sex assigned at birth*</label>
+              </div>
+              <div class="input-wrapper w-full">
+                <input type="text" id="Gender" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Gender" class="input-label bg-white">Gender*</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-[30px]">
+            <div class="flex items-center gap-5">
+              <div class="input-wrapper w-full">
+                <input type="text" id="Date" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Date" class="input-label bg-white">Date of birth (mm-dd-yyyy)*</label>
+              </div>
+              <div class="input-wrapper w-full">
+                <input type="text" id="Phone" class="input-field placeholder-transparent bg-white" placeholder=" " required="">
+                <label for="Phone" class="input-label bg-white">Phone*</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="border border-[#242424] flex items-center justify-center h-[40px] rounded-[40px] bg-white w-[144px]" onclick="closeModal()">
+            <span class="text-sm font-semibold">Cancel</span>
+          </button>
+          <span class="font-medium text-[#8D8D8D]">Step 1 of 2</span>
+          <button class="border border-[#242424] bg-[#242424] flex items-center justify-center h-[40px] rounded-[40px] w-[144px] text-[#F4F4F4]">
+            <span class="text-sm font-semibold">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      function togglePanel(panelNumber) {
+        const panel = document.getElementById(`panel-${panelNumber}`);
+        const arrow = document.getElementById(`arrow-${panelNumber}`);
+        const maxHeight = panel.style.maxHeight;
+
+        if (maxHeight === "0px" || maxHeight === "") {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          arrow.classList.add("rotate-180");
+        } else {
+          panel.style.maxHeight = "0px";
+          arrow.classList.remove("rotate-180");
+        }
+      }
+
+      function openModal() {
+        document.getElementById("modal").classList.remove("hidden");
+      }
+      function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
